@@ -1,0 +1,17 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-go@v4
+      with:
+        go-version-file: go.mod
+    - name: Test
+      run: go test -v ./... &&  go run ./div.go
