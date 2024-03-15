@@ -14,4 +14,4 @@ jobs:
       with:
         go-version-file: go.mod
     - name: Test
-      run: go test -v ./... &&  go run ./div.go
+      run: make test run

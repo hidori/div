@@ -8,4 +8,4 @@ test:
 
 .PHONY: run
 run:
-	time go run ./div.go
+	time go run ./cmd/main.go

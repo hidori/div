@@ -1,4 +1,4 @@
-module github.com/hidori/div/golang
+module github.com/hidori/go-div
 
 go 1.21.7
 
